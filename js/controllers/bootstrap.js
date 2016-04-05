@@ -72,6 +72,7 @@
     }
   }])
   ; 
+  
   app.controller('DropdownDemoCtrl', ['$scope', function($scope) {
     $scope.items = [
       'The first choice!',
@@ -305,3 +306,18 @@
       $scope.mytime = null;
     };
   }]);
+  
+   app.controller('BusinessTrick', ['$scope', function($scope) {
+    $scope.myInterval = 5000;
+    var slides = $scope.slides = [];
+    $scope.addSlide = function() {
+      slides.push({
+        image: 'img/businesstrick/bst' + slides.length + '.jpg',
+        text: ['Business Trick #0','Business Trick  #1','Business Trick #2','Business Trick #3'][slides.length % 4]
+      });
+    };
+    for (var i=0; i<4; i++) {
+      $scope.addSlide();
+    }
+  }])
+  ;

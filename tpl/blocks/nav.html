@@ -1,97 +1,117 @@
 <!-- list -->
 <ul class="nav">
-  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-    <span translate="aside.nav.HEADER">Navigation</span>
-  </li>
-  <li>
-    <a href="#/app/site" class="auto">      
-      <span class="pull-right text-muted">
-       <!-- <i class="fa fa-fw fa-angle-right text"></i> 
-        <i class="fa fa-fw fa-angle-down text-active"></i> -->
-      </span>
-      <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
-      <span class="font-bold" translate="aside.nav.DASHBOARD">Dashboard</span>
-    </a>
- 
-  </li>
-  
-  
-  
-  <!--Menu App ตัวที่2-->
-     <li ng-class="{active:$state.includes('apps')}">
-    <a href class="auto">
-      <span class="pull-right text-muted">
-        <i class="fa fa-fw fa-angle-right text"></i>
-        <i class="fa fa-fw fa-angle-down text-active"></i>
-      </span>
-      
-      <i class="glyphicon glyphicon-th-large icon text-success"></i>
-      <span >Apps</span>
-    </a>
-    <ul class="nav nav-sub dk">
-      <li class="nav-sub-header">
-        <a href>
-          <span >Apps</span>
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate="aside.nav.HEADER">Navigation</span>
+    </li>
+    <li>
+        <a href="#/app/site" class="auto">      
+            <span class="pull-right text-muted">
+                <!-- <i class="fa fa-fw fa-angle-right text"></i> 
+                 <i class="fa fa-fw fa-angle-down text-active"></i> -->
+            </span>
+            <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+            <span class="font-bold" translate="aside.nav.DASHBOARD">Dashboard</span>
         </a>
-      </li>
-      <li ui-sref-active="active">
-        <a ui-sref="app.calendar">
-          <span >Calendar</span>
+
+    </li>
+
+
+
+    <!--Menu App ตัวที่2-->
+    <li ng-class="{active:$state.includes('apps')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+
+            <i class="glyphicon glyphicon-th-large icon text-success"></i>
+            <span >Apps</span>
         </a>
-      </li>
-      <li ui-sref-active="active">
-        <a ui-sref="apps.contact">
-          <span >Contacts</span>
-        </a>
-      </li>
-      <li ui-sref-active="active">
-        <a ui-sref="apps.note">
-            <span> Note</span>
-        </a>
-      </li>
-      <li ui-sref-active="active">
-        <a ui-sref="app.weather">
-          <span>Weather</span>
-        </a>
-      </li>
-    </ul>
-  </li>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span >Apps</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.calendar">
+                    <span >Calendar</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="apps.contact">
+                    <span >Contacts</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="apps.note">
+                    <span> Note</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.weather">
+                    <span>Weather</span>
+                </a>
+            </li>
+        </ul>
+    </li>
     <!--Menu App ตัวที่2-->
 
-  <li class="line dk"></li>
 
-  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-    <span>Services</span>
-  </li>
- 
- 
+    <li class="line dk"></li>
 
- 
-  <li ui-sref-active="active">
-    <a ui-sref="app.chart">
-      <i class="glyphicon glyphicon-signal"></i>
-      <span translate="aside.nav.components.CHART">Chart</span>
-    </a>
-  </li>
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span>Services</span>
+    </li>
 
 
-  <li class="line dk"></li>
 
-  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
-    <span translate="aside.nav.your_stuff.YOUR_STUFF">Your Stuff</span>
-  </li>  
-  <li>
-    <a ui-sref="app.page.profile">
-      <i class="icon-user icon text-success-lter"></i>
-    <!--  <b class="badge bg-success pull-right">30%</b> -->
-      <span translate="aside.nav.your_stuff.PROFILE">Profile</span>
-    </a>
-  </li>
-  <li>
-    <a ui-sref="app.docs">
-      <i class="icon-question icon"></i>
-      <span translate="aside.nav.your_stuff.DOCUMENTS">Documents</span>
-    </a>
-  </li>
+
+    <li ui-sref-active="active">
+        <a ui-sref="app.chart">
+            <i class="glyphicon glyphicon-signal"></i>
+            <span translate="aside.nav.components.CHART">Chart</span>
+        </a>
+    </li>
+
+
+    <li class="line dk"></li>
+
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
+        <span translate="aside.nav.your_stuff.YOUR_STUFF">Your Stuff</span>
+    </li>  
+    <li>
+        <a ui-sref="app.page.profile">
+            <i class="icon-user icon text-success-lter"></i>
+            <!--  <b class="badge bg-success pull-right">30%</b> -->
+            <span translate="aside.nav.your_stuff.PROFILE">Profile</span>
+        </a>
+    </li>
+    <li>
+        <a ui-sref="app.docs">
+            <i class="icon-question icon"></i>
+            <span translate="aside.nav.your_stuff.DOCUMENTS">Documents</span>
+        </a>
+    </li>
+
+    <!--ส่วนจัดการ-->
+    <li class="line dk"></li>
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span>Management</span>
+    </li>
+    <li>
+        <a ui-sref="app.docs">
+            <i class="icon-users icon"></i>
+            <span >User</span>
+        </a>
+    </li>
+    <li>
+        <a ui-sref="app.docs">
+            <i class="icon-settings icon"></i>
+            <span >Service</span>
+        </a>
+    </li>
+    <!--/.ส่วนจัดการ-->
 </ul>
 <!-- / list -->

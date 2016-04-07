@@ -541,6 +541,24 @@ angular.module('app')
                     }]
                   }
               })
+              .state('app.mylocation', {
+                  url: '/mylocation',
+                  templateUrl: 'tpl/mo/ui_googlemap.html',
+                  resolve: {
+                      deps: ['uiLoad',
+                        function( uiLoad ){
+                          return uiLoad.load( [
+                            'js/app/mo/map/load-google-maps.js',
+                            'js/app/mo/map/ui-map.js',
+                            'js/app/mo/map/map.js'] ).then(
+                              function(){
+                                return loadGoogleMaps(); 
+                              }
+                            );
+                      }]
+                  } 
+              });
+              
               /*mo*/
               
       }
